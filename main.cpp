@@ -23,8 +23,8 @@ MCUFRIEND_kbv tft;
 #define WHITE 0xFFFF
 
 const char *scedule[] = {"CAR", "SOa", "SOb", "MAT", "COM", "KRa", "EN",
-                         "EN",  "HAN", "SOa", "MUb", "PE",  "MAT", "ENG",
-                         "KRa", "ENG", "MAT", "PE",  "SCI", "EN",  "CH",
+                         "EN",  "HAN", "SOa", "MUb", "PE",  "MAT", "EG",
+                         "KRa", "EG", "MAT", "PE",  "SCI", "EN",  "CH",
                          "SCI", "KRa", "EXP", "EXP", "EN",  "COM", "MUa",
                          "HAN", "MUa", "MAT", "KRb", "CH",  "CH",  "CH"};
 
@@ -89,6 +89,7 @@ void loop()
     tft.print('M');
 
     tft.print(' ');
+    tft.print('\n');
     tft.print('\n');
 
     uint32_t yr = year();
@@ -155,6 +156,7 @@ void loop()
         gyosi = 7;
 
     tft.print('\n');
+    tft.print('\n');
 
     tft.setTextSize(2);
 
@@ -175,6 +177,5 @@ void loop()
             }
             tft.print(' ');
         }
-        tft.print('\n');
     }
 }
