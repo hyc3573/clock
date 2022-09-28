@@ -158,9 +158,9 @@ void loop()
 
     tft.setTextSize(2);
 
-    if (wd != 0 && wd != 7)
+    if (wd != 1 && wd != 7)
     {
-        uint32_t d = wd - 1;
+        uint32_t d = wd - 2;
         for (int i = 0; i < 7; i++)
         {
             if (gyosi - 1 == i)
